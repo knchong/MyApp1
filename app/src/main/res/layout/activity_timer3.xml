@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg23"
+    tools:context=".Timer3">
+
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="177dp"
+        android:layout_height="77dp"
+
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/telex"
+        android:text="00:00"
+        android:textColor="#ffffff "
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/telex"
+        android:text="Start"
+        android:textColor="#ffffff "
+        app:icon="@drawable/ic_access_time_black_24dp"
+        app:iconTint="#ffffff "
+        app:layout_constraintBottom_toTopOf="@+id/button_reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="176dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/telex"
+        android:text="Reset"
+        android:textColor="#ffffff "
+        android:visibility="invisible"
+        app:icon="@drawable/ic_refresh_black_24dp"
+        app:iconTint="#ffffff "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_pause"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/Nextbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="46dp"
+        android:onClick="Nextbtn3"
+        android:text="DONE"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

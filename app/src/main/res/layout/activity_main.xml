@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/logoutbutton"
+        android:layout_width="110sp"
+        android:layout_height="50dp"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg7"
+        android:fontFamily="@font/telex"
+        android:onClick="logout"
+        android:text="Log  Out"
+        android:textColor="#ffffff "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="192dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="188dp"
+        android:fontFamily="@font/telex"
+        android:text="Username"
+        android:textAllCaps="false"
+        android:textColor="#ffffff "
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="240dp"
+        android:fontFamily="@font/telex"
+        android:text="Welcome, "
+        android:textAllCaps="false"
+        android:textColor="#ffffff "
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="101dp"
+        android:fontFamily="@font/telex"
+        android:text="To My Fitness App"
+        android:textAllCaps="false"
+        android:textColor="#ffffff "
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <TextView
+        android:id="@+id/fullemail"
+        android:layout_width="202dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="188dp"
+        android:fontFamily="@font/telex"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textColor="#ffffff "
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:text="Email" />
+
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="110sp"
+        android:layout_height="50dp"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg7"
+        android:fontFamily="@font/telex"
+        android:onClick="editprofile"
+        android:text="Edit profile"
+        android:textColor="#ffffff "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutbutton" />
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="120sp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="77dp"
+        android:background="@drawable/bg7"
+        android:fontFamily="@font/telex"
+        android:onClick="startbtn"
+        android:text="start"
+        android:textColor="#ffffff "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/notebtn"
+        android:layout_width="120sp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/bg7"
+        android:fontFamily="@font/telex"
+        android:onClick="notebtn"
+        android:text="My Goals"
+        android:textColor="#ffffff "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/startbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
